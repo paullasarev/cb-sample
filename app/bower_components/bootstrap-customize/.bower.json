@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-customize",
+  "version": "3.3.4",
+  "description": "Twitter Bootstrap without Javascript, Glyphicons.",
+  "main": [
+    "css/bootstrap.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "config.json"
+  ],
+  "homepage": "https://github.com/vn38minhtran/bootstrap-customize",
+  "_release": "3.3.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.3.4",
+    "commit": "37afc967337727458099ab12b46c81e954e3853d"
+  },
+  "_source": "git://github.com/vn38minhtran/bootstrap-customize.git",
+  "_target": "~3.3.4",
+  "_originalSource": "bootstrap-customize"
+}

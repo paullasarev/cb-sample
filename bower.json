@@ -1,0 +1,10 @@
+{
+  "name": "cb-sample",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "bootstrap-customize": "~3.3.4",
+    "normalize.css": "~3.0.3"
+  },
+  "devDependencies": {}
+}
