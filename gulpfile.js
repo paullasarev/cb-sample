@@ -23,6 +23,7 @@ var imagemin = require('gulp-imagemin');
 var runSequence = require('run-sequence');
 // var karma = require('gulp-karma');
 var opn = require('opn');
+var rename = require("gulp-rename");
 // var webpackStatsHelper = require('./webpack.stats.helper');
 // var replace = require('gulp-replace-task');
 // var proxy = require('proxy-middleware');
@@ -53,12 +54,11 @@ var autoprefixerBrowsers = [
 
 
 gulp.task('serve', function (callback) {
-  runSequence('clean:dev', 'webpack:dev', 'html:dev', 'styles:dev', 'images:dev', 'webserver', 'webpack:watch', callback);
+  runSequence('clean:dev', 'webpack:dev', 'html:dev', 'styles:dev', 'images:dev', 'fonts:dev', 'webserver', 'webpack:watch', callback);
 });
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', 'webpack:dist', 'html:dist', 'styles:dist', 'images:dist', callback);
-  //'images', 'fonts', 'copy'
+  runSequence('clean:dist', 'webpack:dist', 'html:dist', 'styles:dist', 'images:dist', 'fonts:dist', callback);
 });
 
 
@@ -171,6 +171,19 @@ gulp.task('images:dist', function () {
     .pipe(gulp.dest(path.join(conf.dist.dir, 'img')));
 });
 
+
+gulp.task('fonts:dev', function () {
+  gulp.watch('app/font/**/*.{ttf,eot,svg,woff,woff2}', ['fonts:dev']);
+  return gulp.src('app/font/**/*.{ttf,eot,svg,woff,woff2}')
+    .pipe(rename({dirname:""}))
+    .pipe(gulp.dest(path.join(conf.dev.dir, 'font')));
+});
+
+gulp.task('fonts:dist', function () {
+  return gulp.src('app/font/**/*.{ttf,eot,svg,woff,woff2}')
+    .pipe(rename({dirname:""}))
+    .pipe(gulp.dest(path.join(conf.dist.dir, 'font')));
+});
 
 var isOpenApp = false;
 function openApp() {
