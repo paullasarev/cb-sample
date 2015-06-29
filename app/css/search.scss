@@ -1,0 +1,39 @@
+.search__input {
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 34px;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 32px;
+    padding: 0 8px;
+
+    color: #b2b2b2;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+    outline: none;
+    background-color: #f3f3f3;
+}
+
+.search__button {
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+
+    display: inline-block;
+
+    height: 34px;
+    padding: 0 12px;
+
+    cursor: pointer;
+    text-align: left;
+    text-align: center;
+
+    color: #fefefe;
+    border: none;
+    outline: none;
+    background-color: #29c5e6;
+}
+

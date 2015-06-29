@@ -130,8 +130,9 @@ gulp.task('webserver', function() {
 gulp.task('styles:dev', function () {
   gulp.watch('app/css/*.{css,scss}', ['styles:dev']);
   return merge (
-      gulp.src('app/css/*.css'),
-      gulp.src('app/css/*.scss')
+      // gulp.src('app/css/*.css'),
+      // gulp.src('app/css/*.scss')
+      gulp.src('app/css/app.scss')
         .pipe(sass())
     )
     .pipe(sourcemaps.init())
@@ -147,8 +148,9 @@ gulp.task('styles:dev', function () {
 
 gulp.task('styles:dist', function () {
   return merge (
-      gulp.src('app/css/*.css'),
-      gulp.src('app/css/*.scss')
+      // gulp.src('app/css/*.css'),
+      // gulp.src('app/css/*.scss')
+      gulp.src('app/css/app.scss')
         .pipe(sass())
     )
     .pipe(concatCss("app.css"))

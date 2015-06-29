@@ -1,0 +1,85 @@
+.slide__text {
+    position: relative;
+    z-index: 10;
+    top: 40px;
+    left: 35px;
+}
+
+.slide__text-header {
+    font-size: 42px;
+
+    color: #5a5a5a;
+}
+
+.slide__text-main {
+    font-size: 20px;
+
+    color: #acacac;
+}
+
+.slide__image {
+    z-index: 0;
+
+    margin-top: -62px;
+}
+
+.slider__list {
+    width: 100%;
+    height: 50px;
+/*    // margin-top: -2px;
+*/
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.slide-list {
+    display: table;
+/*    // list-style:none; 
+*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    table-layout: fixed;
+
+    cursor: pointer;
+}
+
+.slide-list__item {
+    font-family: Oswald;
+
+    display: table-cell;
+}
+
+.slide-list__item-number {
+    font-size: 18px;
+    line-height: 28px;
+
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    margin-top: 12px;
+    margin-left: 12px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #8f8f8f;
+}
+
+.slide-list__item-number_active {
+    color: #fff;
+    background-color: #29c5e6;
+}
+
+.slide-list__item-text {
+    font-size: 18px;
+    line-height: 16px;
+
+    color: #8f8f8f;
+}
+
+.slide-list__item-text_active {
+    color: #29c5e6;
+}

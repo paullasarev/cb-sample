@@ -1,0 +1,22 @@
+@import 'normalize.scss';
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../font/oswald-regular-webfont.eot');
+    src: url('../font/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/oswald-regular-webfont.woff2') format('woff2'),
+      url('../font/oswald-regular-webfont.woff') format('woff'),
+      url('../font/oswald-regular-webfont.ttf') format('truetype');
+}
+
+
+@import 'home.scss';
+
+@import 'menu.scss';
+
+@import 'slide.scss';
+
+@import 'content.scss';

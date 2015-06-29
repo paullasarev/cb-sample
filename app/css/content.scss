@@ -1,0 +1,44 @@
+.item__header {
+    margin-top: 30px;
+    margin-bottom : 18px;
+}
+
+.item-head__img, .item-head__text, .item-head__pattern
+{
+  display: inline-block;
+}
+
+.item-head {
+    height:19px;
+    line-height:19px;
+    background: url("../img/slash-pattern-15.png");
+    background-repeat: repeat-x;
+
+}
+
+.item-head__img {
+  width: 15px;
+  background: url("../img/bg.png");
+  padding: 0px 2px;
+}
+
+.item-head__text {
+    background: url('../img/bg.png');
+    font-size:15px;
+    color:#8f8f8f;
+    padding:2px 8px;
+    display: inline;
+    vertical-align: top;
+}
+
+.item-head__pattern {
+  background: url("../img/slash-pattern-15.png");
+  background-repeat: repeat-x;
+}
+
+.item__text
+{
+  color:#8f8f8f;
+  font-family: Tahoma;
+  font-size:12px;
+}

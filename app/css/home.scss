@@ -1,0 +1,61 @@
+// @import 'content.css';
+
+.home {
+    font-family: Oswald,Tahoma;
+    font-size: 12px;
+
+    width: 100%;
+    margin: 0;
+
+    background: url('../img/bg.png');
+    background-color: #f7f7f7;
+}
+
+.home__headline {
+    width: 100%;
+    height: 5px;
+
+    background-color: #7e7e7e;
+}
+
+.home__line {
+    width: 80%;
+    min-width: 480px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.home__head {
+    @extend .home__line;
+
+    height: 38px;
+}
+
+.home__menu {
+    @extend .home__line;
+}
+
+.home__slider {
+    @extend .home__line;
+}
+
+.home__main {
+    @extend .home__line;
+}
+
+.home__foot {
+    width: 100%;
+    height: 112px;
+
+    background-color: #7e7e7e;
+}
+
+.head__logo {
+    float: left;
+}
+
+.head__search {
+    float: right;
+}
+
+
